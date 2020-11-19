@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './assets/j4f.png'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <nav className='nav'>
+      <img alt='' src={logo} className='logo' />
+      <span className='nav__signin'>Sign In</span>
+    </nav>
+    <header>
+      <h1>Let's play a game <br /> just for fun</h1>
+      <p>
+        J4F is an interactive, fun, secure and
+        safe app. Create an account, set your
+        questions, share your profile link and
+        see what your friends think about you!
+      </p>
+    </header>
+  </div>
+)
 
 export default App;
