@@ -1,0 +1,23 @@
+.logo{
+    width: 19.171rem;
+    height: 8rem;
+    margin-left: 7%;
+}
+
+.nav{
+    border-bottom: 0.1rem solid #8992B9;
+    width: 100%;
+    /* padding: none; */
+    background-color: #232946;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 6.8rem;
+}
+
+.nav__signin{
+    margin-right: 7%;
+    margin-top: 1%;
+    font-size: 3.3rem;
+}

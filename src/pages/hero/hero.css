@@ -1,0 +1,27 @@
+header{
+    background-color: #232946;
+    height: 90.5vh;
+}
+
+h1{
+    color: #FFFFFF;
+    font-size: 6rem;
+}
+
+p{
+    color: #BDBEC7;
+}
+
+.banner{
+    display: flex;
+    border: 1px solid red;
+}
+
+.banner__img{
+    border: 1px solid red; 
+    margin-left: 10rem;
+}
+
+.banner__descr{
+
+}
