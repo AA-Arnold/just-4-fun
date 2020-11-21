@@ -8,7 +8,7 @@
     border-bottom: 0.1rem solid #8992B9;
     width: 100%;
     /* padding: none; */
-    background-color: #232946;
+    background-color: var(--primary-color);
     color: #FFFFFF;
     display: flex;
     flex-direction: row;

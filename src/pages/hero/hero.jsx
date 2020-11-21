@@ -1,6 +1,6 @@
 import React from 'react'
 import './hero.css'
-import bana from '../../assets/banner.svg'
+import bana from '../../assets/banner.png'
 
 const Hero = () =>(
     <header>
