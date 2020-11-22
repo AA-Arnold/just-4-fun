@@ -18,9 +18,10 @@ header{
     font-size: 2.5rem;
     margin-top: 6.5rem;
     line-height: 4.8rem;
+    margin-bottom: 6.5rem;
 }
 
-.banner{
+.banne__flex-container{
     display: flex;
     width: 100%;
 }
@@ -44,13 +45,13 @@ header{
         height: 50vh;
         padding: 0px;
         border: 1px solid orange;
+        text-align: center;
     }
     .banner__heading{
         color: #FFFFFF;
         font-size: 3rem;
         width: auto;
         height: 81px;
-        text-align: center;
         margin-top: 4rem;
         line-height: 3.9rem;
     }
@@ -58,11 +59,10 @@ header{
         color: #BDBEC7;
         font-size: 2rem;
         width: calc(100vw - 6rem);
-        text-align: center;
         margin-top: 3rem;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: none;
+        margin-bottom: 0;
         line-height: 2.9rem;
     }
     .banner__img{ 

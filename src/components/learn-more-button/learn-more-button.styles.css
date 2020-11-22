@@ -1,0 +1,46 @@
+.btn-text{
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+    .btn-text:link,
+    :visited{
+        color: var(--highlight-color);
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid var(--highlight-color);
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    .btn-text:hover{
+        background-color: var(--highlight-color);
+        color: var(--primary-color);
+        box-shadow: 0 1rem 2rem rgba( #000000,  .15);
+        transform: translateY(-2px);
+    }
+
+    .btn-text:active{
+        box-shadow: 0 .5rem 1rem rgba( #000000, .15);
+        transform: translateY(0px);
+    }
+
+    @media (min-width:320px) and (max-width:414px){
+        .btn-text{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+    .btn-text:link,
+    :visited{
+       /* display: none; */
+    }
+
+    .btn-text:hover{
+        /* display: none; */
+    }
+
+    .btn-text:active{
+        /* display: none */
+    }
+    }
