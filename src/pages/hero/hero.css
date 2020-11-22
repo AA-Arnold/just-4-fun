@@ -3,14 +3,14 @@ header{
     height: 90.5vh;
 }
 
-h1{
+.banner__heading{
     color: #FFFFFF;
     font-size: 6rem;
     width:54.2rem;
     height: 12.3rem;
 }
 
-p{
+.banner__paragraph{
     color: #BDBEC7;
     width:43.8rem;
     height:16.9rem;
@@ -35,37 +35,35 @@ p{
     padding-left: 4.8rem;
 }
 
-@media (min-width:320px) and (max-width:414px) {
-    .banner{
-        border: 1px solid blue;
-        width: 100%;
-    }
+@media (min-width:320px) and (max-width:414px){
+    /* .banner{
+        
+    } */
     .banner__descr{
-        padding-left: 0px;
+        width: 100vw;
+        height: 50vh;
+        padding: 0px;
+        border: 1px solid orange;
     }
-    h1{
+    .banner__heading{
         color: #FFFFFF;
-        width: 30rem;
-        height: 8.1rem;
-        /* margin: 0 50%; */
-        transform: translateX(3.4rem);
-        /* justify-content: center; */
         font-size: 3rem;
+        width: auto;
+        height: 81px;
         text-align: center;
-        border: 1px solid green;
-        /* font-size: 6rem;
-        width:54.2rem;
-        height: 12.3rem; */
+        margin-top: 4rem;
+        line-height: 3.9rem;
     }
-    p{
+    .banner__paragraph{
         color: #BDBEC7;
-        width:30rem;
-        height:12.5rem;
         font-size: 2rem;
-        margin-top: 3.5rem;
-        line-height: 2.9rem;
-        border: 1px solid wheat;
+        width: calc(100vw - 6rem);
         text-align: center;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: none;
+        line-height: 2.9rem;
     }
     .banner__img{ 
         display: none;
