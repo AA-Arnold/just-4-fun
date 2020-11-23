@@ -1,6 +1,6 @@
 header{
     background-color: var(--primary-color);
-    height: 90.5vh;
+    height: auto;
 }
 
 .banner__heading{
@@ -42,7 +42,7 @@ header{
     } */
     .banner__descr{
         width: 100vw;
-        height: 50vh;
+        height: 64vh;
         padding: 0px;
         border: 1px solid orange;
         text-align: center;

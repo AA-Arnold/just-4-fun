@@ -1,0 +1,25 @@
+.section-features{
+    background-color: #484D64;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1-of-4{
+    /* flex : 0 1 20%; */
+    margin: 2rem auto;
+}
+
+/* .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.col-1-of-4{
+    margin: 0 auto;
+} */
+
