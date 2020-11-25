@@ -4,7 +4,7 @@
     padding: 2.5rem;
     text-align: center;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem black;
+    /* box-shadow: 0 1.5rem 4rem black; */
     transition: transform .3s; 
     max-width: 313px;
 }
@@ -12,7 +12,7 @@
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+    background-image: linear-gradient(to right bottom, #ec8d81, #28b485);
     background-clip: text;
     color: transparent;
 }

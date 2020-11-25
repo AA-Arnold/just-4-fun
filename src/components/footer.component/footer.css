@@ -1,0 +1,24 @@
+.footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+    color: #B8C1EC;
+}
+
+.footer__img{
+    margin: 2rem;
+}
+
+.footer__img-icons{
+    margin: 0 .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right bottom, #ec8d81, #28b485);
+    background-clip: text;
+    color: transparent;
+    transition: all 3s;
+}
+
+.footer__img-icons:hover{
+    transform: translateY(-1rem) scale(1.03);
+}

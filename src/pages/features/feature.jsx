@@ -4,9 +4,10 @@ import './features.css'
 
 export const Features = () => (
     <section className="section-features">
+        <h2 className='section-heading'>Features</h2>
         <div className="row">
             <div className="col-1-of-4">
-                <FeatureBox heading={'Explore the world'} iconName={'icon-basic-world'}>
+                <FeatureBox heading={'Security and Privacy'} iconName={'icon-basic-world'}>
                 Your messages are secured with
                 end to end encryption and your 
                 account is secure. J4f is built 

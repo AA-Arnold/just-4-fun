@@ -8,17 +8,19 @@ header{
     font-size: 6rem;
     width:54.2rem;
     height: 12.3rem;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 .banner__paragraph{
     color: #BDBEC7;
     width:43.8rem;
     height:16.9rem;
-    outline: 2px border green;
     font-size: 2.5rem;
     margin-top: 6.5rem;
     line-height: 4.8rem;
-    margin-bottom: 6.5rem;
+    margin-bottom: 9.5rem;
+    font-family: 'Lora', serif;
 }
 
 .banne__flex-container{
@@ -44,7 +46,6 @@ header{
         width: 100vw;
         height: 64vh;
         padding: 0px;
-        border: 1px solid orange;
         text-align: center;
     }
     .banner__heading{
