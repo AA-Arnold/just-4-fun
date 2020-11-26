@@ -1,5 +1,5 @@
 import React from 'react'
-import {FeatureBox} from '../../components/features/features-box.component'
+import {FeatureBox} from '../../../components/features/features-box.component'
 import './features.css'
 
 export const Features = () => (

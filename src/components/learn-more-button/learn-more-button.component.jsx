@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './learn-more-button.styles.css'
 
 
-const signInButton = () =>{
-    console.log('clicked')
-}
+ const LearnMore = ({ children}) => (
+    <Link to='signin' className='btn-text'>{children}</Link>
+ )
 
-export const LearnMore = ({ children }) => (
-    <a href="#i" className="btn-text" onClick={signInButton}>{children}</a>
-)
+
+
+    
+
+export default LearnMore

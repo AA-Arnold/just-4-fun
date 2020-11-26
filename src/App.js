@@ -1,19 +1,21 @@
 import './App.css';
 import './icons-css/icon-font.css'
 import Nav from './components/nav.component/Nav'
-import Hero from './pages/hero/hero'
-import { Features } from './pages/features/feature'
+import Home from './pages/home/home'
 import Footer from './components/footer.component/Footer.component'
-import { SignIn } from './components/sign-in/Sign-in.component'
+import { SignIn } from './components/sign-in/Sign-in'
+import { Route, Switch } from 'react-router-dom';
 
 
 const App = () => (
   <div className="App">
     <Nav />
-    <Hero />
-    <Features />
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/signin' component={SignIn} />
+    </Switch>
     <Footer />
-    <SignIn />
+
   </div>
 )
 

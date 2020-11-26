@@ -1,7 +1,7 @@
 import React from 'react'
 import './hero.css'
-import bana from '../../assets/banner.png'
-import {LearnMore} from '../../components/learn-more-button/learn-more-button.component'
+import bana from '../../../assets/banner.png'
+import LearnMore from '../../../components/learn-more-button/learn-more-button.component'
 
 const Hero = () =>(
     <header>
