@@ -1,0 +1,50 @@
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 10rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.btn:hover{
+    transform: translateY(-.3rem);
+    background-color: #EEBBC3;
+    color: black;
+    box-shadow: 0 10px 20px rgb(51, 49, 49);
+}
+
+
+.btn:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 5px 10px #000;
+}
+
+.btn--white{
+    background-color: #fff;
+    color: #777;
+}
+
+
+
+.btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
