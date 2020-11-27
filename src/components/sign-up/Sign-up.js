@@ -1,7 +1,7 @@
 import React from 'react';
 import FormInput from '../form-input/form-input.component'
 import { Button } from '../button.component/button.component'
-import '../sign-up/sign-up.css'
+import './sign-up.css'
 
 
 // const onSubmitForm = e => {
@@ -11,7 +11,8 @@ import '../sign-up/sign-up.css'
 //     console.log('Name : ', username.value, '\n email :', email.value, '\n password : ', password.value)
 // }
 
-export const SignIn = () => {
+export const SignUp = () => {
+    const [userName, setUserName] = React.useState('')
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
     const [user, setUser] = React.useState({})
@@ -22,23 +23,35 @@ export const SignIn = () => {
 
     const onSubmitForm = e => {
         e.preventDefault()
+
+        setUserName('')
         setEmail('')
         setPassword('')
-        setUser({ 'email': email, 'password': password })
-
+        setUser({ 'username': userName, 'email': email, 'password': password })
+        console.log(user)
     }
 
     const handleChange = (e) => {
-        setEmail(e.target.value)
+        setUserName(e.target.value)
     }
     const handleChange2 = (e) => {
+        setEmail(e.target.value)
+    }
+    const handleChange3 = (e) => {
         setPassword(e.target.value)
     }
     return (
         <form className='form' onSubmit={onSubmitForm}>
-            <FormInput name='email' type='email' label={'Email'} value={email} onChange={handleChange} required />
-            <FormInput name='password' type='password' label={'Password'} value={password} onChange={handleChange2} required />
-            <Button>Sign In</Button>
+            <FormInput
+                name='username'
+                type='text' label={'Username'}
+                value={userName}
+                onChange={handleChange}
+                required />
+
+            <FormInput name='email' type='email' label={'Email'} value={email} onChange={handleChange2} required />
+            <FormInput name='password' type='password' label={'Password'} value={password} onChange={handleChange3} required />
+            <Button>Register</Button>
         </form>
     )
 }

@@ -9,7 +9,6 @@
     width: 100%;
     /* padding: none; */
     background-color: var(--primary-color);
-    color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,7 +16,16 @@
 }
 
 .nav__signin{
-    margin-right: 7%;
-    margin-top: 1%;
+    margin-right: -162%;
+    margin-top: 7%;
     font-size: 3.3rem;
+    color: white;
+    display: inline-block;
+    width: 124px;
 }
+
+a{
+    text-decoration: none;
+}
+
+    

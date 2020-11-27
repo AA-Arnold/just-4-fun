@@ -90,3 +90,9 @@
   top: 10px;
   transition: 300ms ease all;
 }
+
+.shrink {
+  top: -16px;
+  font-size: 12px;
+  color: white;
+}

@@ -4,7 +4,7 @@ import './learn-more-button.styles.css'
 
 
  const LearnMore = ({ children}) => (
-    <Link to='signin' className='btn-text'>{children}</Link>
+    <Link to='signup' className='btn-text'>{children}</Link>
  )
 
 
