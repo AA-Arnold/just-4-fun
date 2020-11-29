@@ -7,12 +7,28 @@ const Nav = (props) => {
 
   let toggle;
   let link;
-  if (props.location.pathname === '/signin'){
-    toggle = 'Sign Up'
-    link = '/signup'
-  }else{
-    toggle = 'Sign In'
-    link = 'signin'
+  // if (props.location.pathname === '/signin'){
+  //   toggle = 'Sign Up'
+  //   link = '/signup'
+  // }else{
+  //   toggle = 'Sign In'
+  //   link = 'signin'
+  // }
+
+  switch(props.location.pathname){
+    case '/signin':
+      toggle = 'Sign Up'
+      link = '/signup'
+      break;
+
+    case '/signup':
+      toggle = 'Sign In'
+      link = '/signin'
+      break;
+
+    default:
+      toggle = 'Sign In'
+      link = '/signin'
   }
 
   return(
