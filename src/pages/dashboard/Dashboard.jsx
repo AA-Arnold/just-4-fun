@@ -9,15 +9,28 @@ import './dashboard.css'
 const Dashboard = () =>{
 
     let [questionNumber, setQuestionNumber] = React.useState(0)
-    
 
     React.useEffect(() => {
-         onNextChange()
+     onNextChange()
+
+     //eslint-disable-next-line react-hooks/exhaustive-deps
     }, [questionNumber])
 
     const onNextChange = () =>{
-        setQuestionNumber(questionNumber++)
+        if(questionNumber < 10){
+            setQuestionNumber(questionNumber++)
+        }
     }
+
+    // React.useEffect(() => {
+    //     const onNextChange = () =>{
+    //         if(questionNumber < 10){
+    //             setQuestionNumber(questionNumber++)
+    //         }
+    //     }
+    //     onNextChange()
+    //    }, [questionNumber])
+
 
     return(
         <div className='friendeval'>
@@ -34,7 +47,7 @@ const Dashboard = () =>{
 
        </div>
        <div className="friendeval__nav">
-           <button>Prev</button>
+           <button >Prev</button>
            <button onClick={onNextChange}>Next</button>
        </div>
     </div>
