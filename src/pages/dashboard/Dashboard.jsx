@@ -24,7 +24,11 @@ const Dashboard = () =>{
         }
     }
 
-    const getTargetHtml = e => console.log(e.target )
+    const getTargetHtml = e => {
+        const {target:{outerText}} = e
+        const answer = outerText
+        console.log(answer)
+    }
 
     return(
        <div className='friendeval'>
