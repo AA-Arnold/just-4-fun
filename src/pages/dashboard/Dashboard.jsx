@@ -6,6 +6,7 @@ import './dashboard.css'
 const Dashboard = () =>{
 
     let [questionNumber, setQuestionNumber] = React.useState(0)
+    let [answer, setAnswer] = React.useState()
 
     const onNextChange = () =>{
         
@@ -13,6 +14,7 @@ const Dashboard = () =>{
 
             setQuestionNumber((questionNumber) => questionNumber + 1)
         }
+
     }
 
     const onPrevChange = () =>{
@@ -27,8 +29,15 @@ const Dashboard = () =>{
     const getTargetHtml = e => {
         const {target:{outerText}} = e
         const answer = outerText
-        console.log(answer)
+        const answerClicked = {questionId, answer}
+        // console.log(answerClicked)
+        setAnswer(answerClicked)
     }
+
+
+    const {questionId, options} = friendEvalData[questionNumber]
+    console.log( options)
+
 
     return(
        <div className='friendeval'>
@@ -41,10 +50,13 @@ const Dashboard = () =>{
        <div className="friendeval__buttons">
            {
 
-               friendEvalData[questionNumber].options.map(option => <button onClick={getTargetHtml}>{option}</button>)
+            //    friendEvalData[questionNumber].options.map(option => <button onClick={getTargetHtml}>{option}</button>)
+            //    friendEvalData.map(data => console.log(data.questionId = 0 ? data.options : null))
+            options.map(option => <button onClick={getTargetHtml}>{option}</button>)
+            // friendEvalData.map(data => <button >{data.options}</button>)
+
                
            }
-
        </div>
        <div className="friendeval__nav">
            <button onClick={onPrevChange} >Prev</button>
