@@ -6,14 +6,19 @@ import './dashboard.css'
 const Dashboard = () =>{
 
     let [questionNumber, setQuestionNumber] = React.useState(0)
-    let [answer, setAnswer] = React.useState()
+    let [answer, setAnswer] = React.useState([])
+    let [answerClicked, setAnswerClicked] = React.useState()
+    let [disable, setDisable] = React.useState(true)
 
     const onNextChange = () =>{
         
-        if(questionNumber < 9){
+        if(questionNumber < 9 && disable === false){
 
             setQuestionNumber((questionNumber) => questionNumber + 1)
+            setAnswer((answer) => answer.concat(answerClicked))
         }
+
+        
 
     }
 
@@ -24,14 +29,19 @@ const Dashboard = () =>{
             setQuestionNumber((questionNumber) => questionNumber - 1)
 
         }
+
+        setDisable((disable) => !disable)
     }
 
+    // let answerClicked = {}
+    console.log(answerClicked)
     const getTargetHtml = e => {
         const {target:{outerText}} = e
         const answer = outerText
-        const answerClicked = {questionId, answer}
+        answerClicked = {questionId, answer}
         // console.log(answerClicked)
-        setAnswer(answerClicked)
+        setAnswerClicked(answerClicked)
+        
     }
 
 
@@ -52,7 +62,7 @@ const Dashboard = () =>{
 
             //    friendEvalData[questionNumber].options.map(option => <button onClick={getTargetHtml}>{option}</button>)
             //    friendEvalData.map(data => console.log(data.questionId = 0 ? data.options : null))
-            options.map(option => <button onClick={getTargetHtml}>{option}</button>)
+            options.map(option => <button disabled={disable} onClick={getTargetHtml}>{option}</button>)
             // friendEvalData.map(data => <button >{data.options}</button>)
 
                
